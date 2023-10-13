@@ -55,4 +55,5 @@ dependencies {
     implementation(libs.ktx.graphics)
     implementation(libs.ktx.math)
     implementation(libs.ktx.vis)
+    implementation(libs.textratypist)
 }

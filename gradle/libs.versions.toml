@@ -9,6 +9,7 @@ kotlin = "1.8.21"
 ktlint = "1.0.0"
 ktx = "1.11.0-rc6"
 spotless = "6.22.0"
+textratypist = "0.8.3"
 [libraries]
 dagger-core = { module = "com.google.dagger:dagger", version.ref = "dagger"}
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger"}
@@ -24,6 +25,7 @@ ktx-app = { module = "io.github.libktx:ktx-app", version.ref = "ktx" }
 ktx-graphics = { module = "io.github.libktx:ktx-graphics", version.ref = "ktx" }
 ktx-math = { module = "io.github.libktx:ktx-math", version.ref = "ktx" }
 ktx-vis = { module = "io.github.libktx:ktx-vis", version.ref = "ktx" }
+textratypist = { module = "com.github.tommyettinger:textratypist", version.ref = "textratypist" }
 [plugins]
 gretty = { id = "org.gretty", version.ref = "gretty" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
