@@ -16,5 +16,4 @@ class LevelModule {
     @Provides
     @ScreenScoped
     fun stage(viewport: Viewport, batch: SpriteBatch): Stage = Stage(viewport, batch)
-
 }
