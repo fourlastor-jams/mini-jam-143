@@ -94,3 +94,6 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
+
+# Auto generated tile atlas
+assets/images/*

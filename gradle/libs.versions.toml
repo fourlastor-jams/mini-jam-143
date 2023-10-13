@@ -17,6 +17,7 @@ gdx-platform = { module = "com.badlogicgames.gdx:gdx-platform", version.ref = "g
 gdx-ai = { module = "com.badlogicgames.gdx:gdx-ai", version.ref = "gdx-ai" }
 gdx-backend-lwjgl3 = { module = "com.badlogicgames.gdx:gdx-backend-lwjgl3", version.ref = "gdx" }
 gdx-backend-teavm = { module = "com.github.xpenatan.gdx-teavm:backend-teavm", version.ref = "gdx-teavm" }
+gdx-tools = { module = "com.badlogicgames.gdx:gdx-tools", version.ref = "gdx" }
 google-gson = { module = "com.google.code.gson:gson", version.ref = "google-gson" }
 ktx-actors = { module = "io.github.libktx:ktx-actors", version.ref = "ktx" }
 ktx-app = { module = "io.github.libktx:ktx-app", version.ref = "ktx" }

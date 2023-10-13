@@ -1,3 +1,5 @@
+import com.badlogic.gdx.tools.texturepacker.TexturePacker
+
 plugins {
     `java-library`
     alias(libs.plugins.kotlin.jvm)
@@ -20,6 +22,23 @@ spotless {
     kotlin {
         ktlint("1.0.0")
     }
+}
+
+val packTextures = tasks.register("packTextures") {
+    val inputDir = "$rootDir/raw-assets/images"
+    val outputDir = "$rootDir/assets/images"
+    inputs.dir(inputDir)
+    outputs.dir(outputDir)
+    doLast {
+        delete(outputDir)
+        TexturePacker.process(TexturePacker.Settings().apply {
+            combineSubdirectories = true
+        }, inputDir, outputDir, "images.pack")
+    }
+}
+
+tasks.processResources.configure {
+    dependsOn(packTextures)
 }
 
 tasks.compileJava.configure {
