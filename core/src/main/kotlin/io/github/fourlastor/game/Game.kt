@@ -19,7 +19,6 @@ class Game @Inject constructor(
         goToLevel()
     }
 
-
     override fun goToLevel() {
         clear()
         addScreen(levelBuilder.router(this).build().screen())
